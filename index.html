@@ -675,7 +675,7 @@ li {
 </style>
 
 <form class="jotform-form" action="https://submit.jotform.com/submit/222856711133654/" method="post" name="form_222856711133654" id="222856711133654" accept-charset="utf-8" autocomplete="on">
-  <input data-hj-allow type="hidden" name="formID" value="222856711133654" />
+  <input type="hidden" name="formID" value="222856711133654" />
   <input data-hj-allow type="hidden" id="JWTContainer" value="" />
   <input data-hj-allow type="hidden" id="cardinalOrderNumber" value="" />
   <div role="main" class="form-all">
@@ -1145,6 +1145,12 @@ for (var i = 0; i < all_spc.length; i++)
 <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.36619"></script>
 
   <!-- ***********  FIN DE PEGADO DE CODIGO FUENTE  ************ -->
+<script>
+    let inputElement = document.querySelectorAll("input");
+    inputElement.forEach((element) => {
+        element.setAttribute("data-hj-allow","");
+    });
+</script>
 </body>
 
 </html>
